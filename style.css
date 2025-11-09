@@ -138,11 +138,11 @@ section {
   background-color: black;
   color: white;
 }
-.social {
+.socials {
   display: flex;
   gap: 2rem;
 }
-.social i {
+.socials i {
   font-size: 2.5rem;
   cursor: pointer;
   transition: 0.2s ease-in-out;
@@ -163,7 +163,7 @@ section {
   gap: 5rem;
 }
 .experience img {
-  width: 19vw;
+  width: 24vw;
   border-radius: 3rem;
 }
 .grid {
@@ -259,7 +259,6 @@ section {
   margin-top: 5rem;
 }
 .input-box input {
-  position: relative;
   border-radius: 3rem;
   border: 2px solid black;
   padding: 2rem 8rem;
@@ -300,7 +299,7 @@ footer ul li a {
 }
 .copyright {
   font-size: 300;
-  margin: 2rem;
+  margin-top: 2rem;
 }
 
 @media (max-width: 1280px) {
@@ -314,15 +313,15 @@ footer ul li a {
   .experience-info {
     flex-direction: column;
   }
-  .input-box .input {
+  .input-box input {
     padding: 2rem 5rem;
     font-size: 2.5rem;
   }
   .input input::placeholder {
-    font-size: 2.5;
+    font-size: 2.5rem;
   }
   .input-box i {
-    font-size: 2, 5rem;
+    font-size: 2.5rem;
   }
 }
 @media (max-width: 768px) {
@@ -344,7 +343,7 @@ footer ul li a {
     font-size: 1.8rem;
   }
   .input-box input::placeholder {
-    font-size: 1.5;
+    font-size: 1.5rem;
   }
   .input-box i {
     display: none;
@@ -370,7 +369,7 @@ footer ul li a {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background: rgb(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.9);
     border-radius: 3rem;
     display: none;
   }
@@ -388,6 +387,7 @@ footer ul li a {
   header .logo {
     font-size: 1.5rem;
   }
+
   .about-container img {
     width: 80vw;
   }
