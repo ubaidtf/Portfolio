@@ -158,49 +158,6 @@ section {
   font-weight: 600;
   margin-bottom: 3rem;
 }
-.experience-info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5rem;
-}
-.experience img {
-  width: 24vw;
-  border-radius: 3rem;
-}
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-}
-.grid-card {
-  border: 2px solid black;
-  border-radius: 3rem;
-  padding: 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  justify-content: left;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-}
-.grid-card:hover {
-  transform: scale(1.02);
-  background-color: black;
-  color: white;
-}
-
-.grid-card i {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-.grid-card span {
-  font-size: 1.5rem;
-  font-weight: 500;
-  background: linear-gradient(to right, rgb(255, 0, 255), rgb(0, 157, 255));
-  background-clip: text;
-  color: transparent;
-}
 ::-webkit-scrollbar {
   width: 20px;
 }
@@ -251,33 +208,57 @@ section {
   font-size: 2rem;
   font-weight: 500;
 }
-.input-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.contact.section {
+  padding: 8rem 12%;
+}
+.contact-card {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: rem;
+  padding: 3rem 2rem;
   text-align: center;
-  gap: 2rem;
-  margin-top: 5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.input-box input {
-  border-radius: 3rem;
-  border: 2px solid black;
-  padding: 2rem 8rem;
-  font-size: 3rem;
+.contact-name {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
 }
-.input-box input::placeholder {
-  font-size: 3rem;
+.contact-details p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
-.input {
-  position: relative;
+.contact-details p i {
+  color: rgb(0, 0, 0); 
+  font-size: 1.25rem;
+  min-width: 1.25rem;
 }
-.input i {
-  position: absolute;
-  font-size: 4rem;
-  top: 50%;
-  left: 10px;
-  transform: translate(50%, -50%);
+.contact-details p a {
+  color: rgb(30, 89, 214);
+  text-decoration: none;
+}
+
+.contact.section.dark-mode {
+  background-color: #111;  
+  color: #eee;
+}
+.contact.section.dark-mode .contact-card {
+  background-color: #1f1f1f;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+}
+.contact.section.dark-mode .contact-details p {
+  color: #ccc;
+}
+.contact.section.dark-mode .contact-details p a {
+  color: rgb(0, 157, 255);
+}
+.contact.section.dark-mode .contact-details p i {
+  color: rgb(0, 157, 255);
 }
 footer {
   bottom: 0;
@@ -303,6 +284,7 @@ footer ul li a {
   font-size: 300;
   margin-top: 2rem;
 }
+
 
 @media (max-width: 1280px) {
   header {
