@@ -343,7 +343,7 @@ footer ul li a {
   .contact.section {
     padding: 6rem 5%;
   }
-    .contact-card img {
+  .contact-card img {
     width: 80vw;
   }
   .contact-card {
@@ -387,12 +387,8 @@ footer ul li a {
   header .logo {
     font-size: 1.5rem;
   }
-
-  .about-container img {
-    width: 80vw;
-  }
   .contact-card img {
-    width: 80vw;
+    width: 30vw;
   }
   footer ul {
     gap: 1rem;
